@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Thông tin người dùng</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    input {
+      width: 350px;
+      border-radius: 4px;
+    }
+
+    select {
+      width: 350px;
+      border-radius: 4px;
+    }
+
+    button {
+      height: 40px;
+      text-align: center;
+    }
+
+    h4 {
+      padding: 0px;
+      margin-left: 8px;
+      ;
+    }
+
+    input {
+      padding: 2px;
+
+
+    }
+
+    button:hover {
+      background-color: wheat;
+      color: turquoise;
+    }
+
+    img {
+      width: 140px;
+      height: 140px;
+    }
+
+    span {
+
+      width: 150px;
+      height: 150px;
+      opacity: 0.8;
+      filter: alpha(opacity=30);
+      /* For IE8 and earlier */
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="text-center">
+    <span><img src="logo.jpg" alt="logo"></span>
+  </div>
+
+  <div class="container">
+    <form method="POST" action="infor.html">
+      <div class="row">
+        <div class="col-lg-4 col-sm-1">
+          <div class="form-group">
+            <div class="row">
+              <b>
+                <h4>Thông tin mua hàng </h4>
+              </b>
+              <button type="submit" class="btn btn-default">Đăng Nhập <i class="fas fa-cloud"></i></button>
+            </div>
+            <p><input type="email" name="email" placeholder="Email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid">
+              <p><input id="Hoten" type="text" placeholder="Họ và tên" required></p>
+              <p><input id="SDT" type="text" placeholder="Số điện thoại" required pattern="[0-9].{10,}"></p>
+              <p><input id="Diachi" type="text" placeholder="Địa chỉ" required></p>
+              <select name="TP">
+                <option value="" disabled selected>--Chọn Thành Phố--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Đà Nẵng</option>
+                <option value="3">Thành Phố Hồ Chí Minh</option>
+              </select>
+              <br>
+              <br>
+
+              <select name="Huyen">
+                <option value="" disabled selected>--Chọn huyện--</option>
+                <option value="1">Chương Mĩ</option>
+                <option value="2">Bình Chánh</option>
+                <option value="3">Trà Ôn</option>
+              </select>
+              <br><br>
+              <select name="Huyen">
+                <option value="" disabled selected>--Chọn Xã--</option>
+                <option value="1">Xuân Mai</option>
+                <option value="2">Bình Tân</option>
+                <option value="3">Du Khê</option>
+              </select>
+
+              <div>
+                Chọn phương thức thanh toán
+                <p><button class="btn btn-success" type="button" id="thanhtoanthe" onclick="myFunction()"> Tiền
+                    mặt</button>
+                  <p><button class="btn btn-danger" id="thanhtoanthe" onclick="myFunction()" type="button">Thẻ ngân
+                      hàng</button>
+              </div>
+              <div>
+                <input id="demo" type="text" style="display: none;" placeholder="Số tài khoản">
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-1">
+          <b>
+            <h4>Thanh toán</h4>
+          </b>
+          <div class="border">
+            <i class="fas fa-car"></i>Thanh toán khi giao hàng(COD)</i>
+            <br>
+            <br>
+            <p>---->Bạn chỉ có thể thanh toán khi đang giao hàng</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-1 border">
+          <div class="row border">
+            <b>
+              <h4> Đơn hàng<a id="sl"></a></h4>
+            </b>
+          </div>
+          <div class="border">
+            <div class="row">
+              <img src="https://cf.shopee.vn/file/102b487b9c7b088244acf2de54835a3a" alt="Áo choàng cá tính">
+              <p class="col-lg-5 text-center"> Áo choàng cá tính </p>
+              <p>92 $</p>
+            </div>
+          </div>
+          <div class="border">
+            <div class="row">
+              <img src="https://repshoe.com/wp-content/uploads/2018/12/Converse-Chuck-Taylor-All-Star-black-1.jpg"
+                alt="Giày converse bí ẩn">
+              <p class="col-lg-5 text-center">Giày converse bí ẩn </p>
+              <p>192 $</p>
+            </div>
+          </div>
+          <p><input type="text" placeholder="Mã giảm giá" style="width: 250px;height: 40px;"> <button
+              class="btn btn-primary">Áp dụng</button></p>
+          <p>Tạm phí</p>
+          <p id="price2">55$</p>
+          <p>Phí vận chuyển</p>
+          <p id="price2">55$</p>
+          <b>
+            <h4>Tổng cộng</h4>
+          </b>
+          <div class="row">
+            <button class="btn btn-default" style="margin-right: 130px;" type="button">Trở lại giỏ hàng</button></p>
+            <button class="btn btn-primary" type="submit">Đặt hàng</button></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>

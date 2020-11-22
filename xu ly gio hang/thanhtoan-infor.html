@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Final</title>
+    <link rel="stylesheet" type="text/css" href="./css/thanhtoaninfor.css">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+
+
+    <link href="./vendors/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <style>
+            @media (max-width: 991px) {
+                #form {
+                    margin-left: 0px;
+                }
+            }
+    
+            @media (min-width: 1800px) {
+    
+                .content-page,
+                #feedback,
+                #footer {
+                    max-width: 1600px;
+                    margin: 0 auto;
+                }
+    
+                #width1600 {
+                    max-width: 1600px;
+                    margin: 0 auto;
+                }
+            }
+    
+            @media (max-width: 550px) {
+                .tienem-title-thongke {
+                    font-size: 1.2rem;
+                }
+    
+                #tienem-message-user {
+                    font-size: 0.8rem;
+                }
+            }
+    
+            @media (min-width: 575px) {
+                .nav-link {
+                    padding-left: 0px;
+                }
+    
+                .nav-link hr {
+                    display: none;
+                }
+            }
+        </style>
+    <style>
+        body{
+            background-color: white;
+        }
+        table, th, td {
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        th {
+            text-align: left;
+        }
+        td {
+            color: cadetblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header-->
+  <div class="tuan-header">
+    <div class="content-page">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="name">
+        <button id="button-menu" class="navbar-toggler" type="button" aria-expanded="false" role="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="icon-parent" style="display:none;background-color:rgba(0, 0, 0, 0);">
+          <div id="icon-menu" style="transform: translateX(0px);">
+            <h4 id="trangchu"><a id="back-home" href="#">Trang chủ</a></h4>
+            <ul id="ulne" class="nav nav-pills nav-stacked">
+              <!--DAY LÀ Tieu de bảng 1 -->
+              <li>
+                <div class="showbang">
+                  <a href="#h1" class="tieudebang">Áo nam</a>
+                  <!--Muc luc từng bảng -->
+                  <div class="chitietbang">
+                    <a href="#h1">Áo sơ mi</a>
+                    <a href="#h1">Áo thun</a>
+                  </div>
+                </div>
+              </li>
+              <!--DAY LÀ Tieu de bảng 2 -->
+              <li>
+                <div class="showbang">
+                  <a href="#h1" class="tieudebang">Áo nữ</a>
+                  <!--Muc luc từng bảng -->
+                  <div class="chitietbang">
+                    <a href="#h1">Áo sơ mi</a>
+                    <a href="#h1">Áo thun</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="right"></div>
+        </div>
+        <a class="navbar-brand" href="./index.html" id="name1"><img height="60px" src="./images/logo.png" alt="Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" id="ul-header">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Thời trang Nam
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./product-list.html">Áo sơ mi</a></li>
+                <li><a class="dropdown-item" href="./product-list.html">Áo thun</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Thời trang nữ
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Đầm</a></li>
+                <li><a class="dropdown-item" href="#">Váy</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink">
+                  Liên hệ
+                </a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                    <li><a class="dropdown-item" href="#">Another submenu action</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                        <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                        <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form id="search" class="form-inline my-lg-0" id="form">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="dropdown">
+            <button class="navbar-brand btn btn-link" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user" style="font-size:24px;color:black"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuUser">
+              <a class="dropdown-item" href="./login.html">Đăng nhập</a>
+              <a class="dropdown-item" href="./register.html">Đăng ký</a>
+            </div>
+          </div>
+          <div  id="icon-header" class="dropdown">
+              <button class="navbar-brand btn btn-link" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-shopping-cart" style="font-size:24px;color:black"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuUser">
+                <p class="dropdown-item">No item in there</p>
+              </div>
+            </div>
+      </nav>
+    </div>
+  </div>
+        <!-- Quảng cáo dưới header -->
+    <!-- Set time chuyển trang tại data-interval -->
+    <div id="myCarousel" class="carousel-advertisement carousel slide" data-ride="carousel" data-interval="6000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" id="width1600">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/1.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/1.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+        <br>
+        <div style="float: left; width:5% ">&nbsp;</div>
+        <!-- Phan than -->
+        <div style="float: left; width: 35%;" class="boder">
+    
+            <form method="post" action="./../index.html">
+                <!-- mua -->
+                <table style="width: 80%;" class="divcenter"> 
+                    <br>
+                    <tr>
+                        <th>Tên người nhận</th>   
+                    </tr>
+                    <tr>
+                        <td>ALABAMA</td>
+                    </tr> 
+
+                    <tr>
+                        <th>Địa chỉ giao hàng</th>   
+                    </tr>
+                    <tr>
+                        <td>273 An Dương Vương, Quận 5 , Thành Phố Hồ Chí Minh</td>
+                    </tr>   
+ 
+                    <tr>
+                        <th>Hình thức thanh toán </th>   
+                    </tr>
+                    <tr>
+                        <td>Visa</td>
+                    </tr>  
+
+                    <tr>
+                        <th>Số điện thoại</th>   
+                    </tr>
+                    <tr>
+                        <td>08081508</td>
+                    </tr> 
+
+                    <tr>
+                        <th>Mã giảm giá</th>   
+                    </tr>
+                    <tr>
+                        <td> R3MV9OCL2 </td>
+                    </tr> 
+
+                    <tr>
+                        <th>Tổng tiền</th>   
+                    </tr>
+                    <tr>
+                        <td><p class="price_original"> 2288 $</p> 1288 $</td>
+                    </tr> 
+
+                </table>
+                
+                
+
+                <!--Dang Ky-->
+                <div style="float: right; width: 82%;" class="divcenter">
+                    <button class="button" onClick="onclick_1()">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+        <div style="float: right; width: 58%;">
+                <form method="post" action="form dk/index.html">
+                    <!-- mua -->
+                    <table style="width: 80%;" class="divcenter"> 
+                        
+                        <tr>
+                            <th>Product</th>   
+                            <th>Price</th>
+                            <th>Quantily</th>
+                            <th>Total</th> 
+                        </tr>
+                        <tr>
+                                <td>
+                                    <img src="https://cf.shopee.vn/file/102b487b9c7b088244acf2de54835a3a"  class="img_tag" >
+                                    <h3> Áo choàng cá tính </h3>  
+                                </td>
+            
+                                <td>
+                                    <p style="float: left;" class="price">92 $ </p>
+                                                                
+                                </td>
+            
+                                <td>
+                                    <a style="color:black; margin-left: 5px; margin-right: 5px;"  id="clicks_2">4</a>
+                                </td>
+            
+                                <td>
+                                    <a style="color:black; margin-left: 5px; margin-right: 5px;"  id="total_2">368</a>
+                                </td>
+                        </tr>  
+                        <!-- anh 3 -->
+                        <tr>
+                                <td>
+                                    <img src="https://repshoe.com/wp-content/uploads/2018/12/Converse-Chuck-Taylor-All-Star-black-1.jpg"  class="img_tag" >
+                                    <h3> Giày converse bí ẩn </h3>  
+                                </td>
+            
+                                <td>
+                                    <p style="float: left;" class="price">192 $ </p>
+                                                                
+                                </td>
+            
+                                <td>
+                                    <a style="color:black; margin-left: 5px; margin-right: 5px;"  id="clicks_3">10</a>
+                                </td>
+            
+                                <td>
+                                    <a style="color:black; margin-left: 5px; margin-right: 5px;"  id="total_3">1920</a>
+                                </td> 
+                        </tr> 
+                    </table>
+        
+                </form>
+        
+        </div>
+        
+         <!-- Footer -->
+  <div class="container-fluid" style="clear: both;">
+        <br> <br> <br>
+        <footer class="row bg-light">
+          <div class="col-sm-1 bg-white"></div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+                <ul class="nav flex-column text-left a-black">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Chính sách bảo hành</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chính sách đổi trả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giao hàng và thanh toán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hướng dẫn mua online</a>
+                    </li>
+                </ul>
+  
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 text-left">
+                    <h5 class="text-left">Đăng kí khuyến mãi</h5>
+                    
+                    <div class="form-group">
+                            <label for="exampleFormControlInput1">Nhập Email của bạn</label>
+                            <div class="form-row">
+                                    <textarea rows="1" cols="20" placeholder="Email" class="col-sm-7" type="email"></textarea>
+                                    <button type="button" class="btn btn-secondary" class="col-sm-3">Đăng kí</button>
+                                </div>
+                          </div>
+                    <p>Theo dõi chúng tôi</p>
+                    <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link active icon" href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link icon" href="#"><i class="fab fa-twitter"> </i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link icon" href="#"><i class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link icon" href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                          </ul>
+                </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-left">
+                <h5>Địa chỉ</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6689082913085!2d106.67992005068234!3d10.759980062400896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7e38d70f%3A0x9f2317bb653235f3!2zMjczIEFuIETGsMahbmcgVsawxqFuZywgUGjGsOG7nW5nIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574824331014!5m2!1svi!2s"
+                    width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-sm-1 bg-white"></div>
+            <!-- Grid column -->
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./../js/tuan/main.js"></script>
+
+        <script src="./../js/trung/main.js"></script>
+    </body>
+<script>
+    function onclick_1(){
+        alert("Thanh toan thanh cong");
+    }
+</script>
+</html>

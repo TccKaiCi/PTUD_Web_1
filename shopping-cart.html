@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="./css/chung/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
+
+    <link href="./css/trung/style.css" rel="stylesheet" />
+    <link href="./css/tuan/style.css" rel="stylesheet" />
+    <link href="./css/tuan/footer/footer.css" rel="stylesheet" />
+    <link href="./vendors/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" />
+    <script defer src="./vendors/fontawesome-free-5.11.2-web/js/all.js"></script>
+
+
+    <title>Clothes Store</title>
+    <style>
+        @media (max-width: 991px) {
+            #form {
+                margin-left: 0px;
+            }
+        }
+
+        @media (min-width: 1800px) {
+
+            .content-page,
+            #feedback,
+            #footer {
+                max-width: 1600px;
+                margin: 0 auto;
+            }
+
+            #width1600 {
+                max-width: 1600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .tienem-title-thongke {
+                font-size: 1.2rem;
+            }
+
+            #tienem-message-user {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 575px) {
+            .nav-link {
+                padding-left: 0px;
+            }
+
+            .nav-link hr {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header-->
+    <div class="tuan-header">
+        <div class="content-page">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="name">
+                <button id="button-menu" class="navbar-toggler" type="button" aria-expanded="false" role="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="icon-parent" style="display:none;background-color:rgba(0, 0, 0, 0);">
+                    <div id="icon-menu" style="transform: translateX(0px);">
+                        <h4 id="trangchu"><a id="back-home" href="./index.html">Trang chủ</a></h4>
+                        <ul id="ulne" class="nav nav-pills nav-stacked">
+                            <!--DAY LÀ Tieu de bảng 1 -->
+                            <li>
+                                <div class="showbang">
+                                    <a href="#h1" class="tieudebang">Áo nam</a>
+                                    <!--Muc luc từng bảng -->
+                                    <div class="chitietbang">
+                                        <a href="./product/aosominam/product-list.html">Áo sơ mi</a>
+                                        <a href="./product/aothunnam/product-list.html">Áo thun</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--DAY LÀ Tieu de bảng 2 -->
+                            <li>
+                                <div class="showbang">
+                                    <a href="#h1" class="tieudebang">Áo nữ</a>
+                                    <!--Muc luc từng bảng -->
+                                    <div class="chitietbang">
+                                        <a href="./product/aosominu/product-list.html">Áo sơ mi</a>
+                                        <a href="./product/aothunnu/product-list.html">Áo thun</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="right"></div>
+                </div>
+                <a class="navbar-brand" href="./index.html" id="name1"><img height="60px" src="./images/logo.png"
+                        alt="Logo"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" id="ul-header">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thời trang Nam
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./product/aosominam/product-list.html">Áo sơ mi</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./product/aothunnam/product-list.html">Áo thun</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thời trang nữ
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./product/aosominu/product-list.html">Áo sơ mi</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./product/aothunnu/product-list.html">Áo thun</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./lienhe.html" id="navbarDropdownMenuLink">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form id="search" class="form-inline my-lg-0" id="form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="dropdown">
+                    <button class="navbar-brand btn btn-link" type="button" id="dropdownMenuUser" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="icon fa fa-user" style="font-size:24px;color:black"></i>
+                    </button>
+                    <div id="div-account-info" class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuUser">
+                        <a class="dropdown-item" href="./login.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="./register.html">Đăng ký</a>
+                    </div>
+                </div>
+                <div id="icon-header" class="dropdown">
+                    <button class="navbar-brand btn btn-link" type="button" id="dropdownMenuUser" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="icon fa fa-shopping-cart" style="font-size:24px;color:black"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuUser">
+                        <div class="dropdown-item">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="./images/products/1.jpg" alt="product" width="30"> Váy trắng (Size
+                                            L)</td>
+                                        <td>x2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./images/products/2.jpg" alt="product" width="30"> Váy đỏ (Size L)
+                                        </td>
+                                        <td>x2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a class="dropdown-item" href="./shopping-cart.html">Chi tiết giỏ</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Content-item -->
+    <main>
+        <!-- Quảng cáo dưới header -->
+        <!-- Set time chuyển trang tại data-interval -->
+        <div id="myCarousel" class="carousel-advertisement carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" id="width1600">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/1.jpg" alt="First slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/1.jpg" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/1.jpg" alt="Third slide" />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+                </ol>
+            </nav>
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <table class="table" style="width: 100%;table-layout:fixed;">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Sản phẩm</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Thành tiền</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="div1">
+                                <td class="text-left"><img src="./images/products/1.jpg" alt="product" width="100%"> 
+                                    <p >Váy
+                                        trắng (Size L)</p>
+                                </td>   
+                                <td>392 vnđ</td>
+                                <td><button class="btn btn-outline-warning" onClick="offClick_1()" style="width: auto;padding: 2px 5px;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                                    <span id="clicks_1" class="text-primary">0 </span><button
+                                        class="btn btn-outline-success" onClick="onClick_1()" style="width: auto;padding: 2px 5px;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </td>
+                                <td>
+                                    <span id="total_1">0</span>
+                                </td>
+                                <td><button class="btn btn-danger"  style="width: auto;" id="but1"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                            </tr>
+                            <tr id="div2">
+                                <td class="text-left"><img src="./images/products/2.jpg" alt="product" width="100%"> 
+                                    <p>Váy
+                                        trắng (Size L)</p>
+                                </td>   
+                                <td>392 vnđ</td>
+                                <td><button class="btn btn-outline-warning" onClick="offClick_2()" style="width: auto;padding: 2px 5px;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                                    <span id="clicks_2" class="text-primary">0 </span><button
+                                        class="btn btn-outline-success" onClick="onClick_2()" style="width: auto;padding: 2px 5px;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </td>
+                                <td>
+                                    <span id="total_2">0</span>
+                                </td>
+                                <td><button class="btn btn-danger"  style="width: auto;" id="but2"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                            </tr>
+                            <tr id="div3">
+                                <td class="text-left"><img src="./images/products/3.jpg" alt="product" width="100%"> 
+                                    <p">Váy
+                                        trắng (Size L)</p>
+                                </td>   
+                                <td>392 vnđ</td>
+                                <td><button class="btn btn-outline-warning" onClick="offClick_3()" style="width: auto;padding: 2px 5px;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                                    <span id="clicks_3" class="text-primary">0 </span><button
+                                        class="btn btn-outline-success" onClick="onClick_3()" style="width: auto;padding: 2px 5px;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </td>
+                                <td>
+                                    <span id="total_3">0</span>
+                                </td>
+                                <td><button class="btn btn-danger"  style="width: auto;" id="but3"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                            </tr>
+                            <tr id="div4">
+                                <td class="text-left"><img src="./images/products/4.jpg" alt="product" width="100%"> 
+                                    <p >Váy
+                                        trắng (Size L)</p>
+                                </td>   
+                                <td>392 vnđ</td>
+                                <td><button class="btn btn-outline-warning" onClick="offClick_4()" style="width: auto;padding: 2px 5px;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                                    <span id="clicks_4" class="text-primary">0 </span><button
+                                        class="btn btn-outline-success" onClick="onClick_4()" style="width: auto;padding: 2px 5px;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </td>
+                                <td>
+                                    <span id="total_4">0</span>
+                                </td>
+                                <td><button class="btn btn-danger"  style="width: auto;" id="but4"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <b>Tổng tiền</b>
+                                </td>
+                                <td><span id="Super_total">0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12 text-right">
+                    <a class="btn btn-primary btn-lg" href="./info-shopping-cart.html">Thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <!-- Footer -->
+    <div class="container-fluid">
+        <footer class="row bg-light">
+            <div class="col-lg-1 bg-white"></div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+                <h5 class="text-left">Thông tin khác</h5>
+                <ul class="nav flex-column text-left a-black">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./chinhsachbaohanh.html">Chính sách bảo hành</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./thongtinvanchuyen.html">Thông tin vận chuyển</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giao hàng và thanh toán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hướng dẫn mua online</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 text-left">
+                <h5 class="text-left">Đăng kí khuyến mãi</h5>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nhập Email của bạn</label>
+                    <div class="form-row">
+                        <textarea rows="1" cols="20" placeholder="Email" class="col-sm-7" type="email"></textarea>
+                        <button type="button" class="btn btn-secondary" class="col-sm-3">Đăng kí</button>
+                    </div>
+                </div>
+                <p>Theo dõi chúng tôi</p>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active icon" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon" href="#"><i class="fab fa-twitter"> </i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon" href="#"><i class="fab fa-google-plus"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-left">
+                <h5>Địa chỉ</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6689082913085!2d106.67992005068234!3d10.759980062400896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7e38d70f%3A0x9f2317bb653235f3!2zMjczIEFuIETGsMahbmcgVsawxqFuZywgUGjGsOG7nW5nIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574824331014!5m2!1svi!2s"
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-lg-1 bg-white"></div>
+            <!-- Grid column -->
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/tuan/itemjs/owl.carousel.min.js"></script>
+    <script src="./js/tuan/itemjs/item.js"></script>
+
+    <script src="./js/tuan/main.js"></script>
+    <script src="./js/tuan/footer/footer.js"></script>
+    <script src="./js/trung/main.js"></script>
+    <script src="./js/trung/header.js"></script>
+
+    <script>
+        var Super_total = 0;
+        /*Them hoac bot gia tri san pham*/
+        var clicks_1 = 0;
+        var max_clicks_1 = 11;
+        var total_1 = 0;
+        var price_1 = 392;
+        function onClick_1() {
+            clicks_1 += 1;
+            total_1 += price_1;
+            Super_total +=price_1;
+            if ( clicks_1 == max_clicks_1){
+                clicks_1 -=1;
+                total_1 -=price_1;
+                Super_total -=price_1;
+                alert("Het hang roi");
+            }
+            document.getElementById("clicks_1").innerHTML = clicks_1;
+            document.getElementById("total_1").innerHTML = total_1;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+        function offClick_1() {
+            clicks_1 -= 1;
+            total_1 -= price_1;
+            Super_total -=price_1;
+            if ( clicks_1 < 0 ){
+                clicks_1 = 0;
+                total_1 = 0;
+                Super_total +=price_1;
+            }
+            document.getElementById("total_1").innerHTML = total_1;
+            document.getElementById("clicks_1").innerHTML = clicks_1;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+    
+        /*Them hoac bot gia tri san pham*/
+        var clicks_2 = 0;
+        var max_clicks_2 = 11;
+        var total_2 = 0;
+        var price_2 = 92;
+        function onClick_2() {
+            clicks_2 += 1;
+            total_2 += price_2;
+            Super_total +=price_2;
+            if ( clicks_2 == max_clicks_2){
+                clicks_2 -=1;
+                total_2 -=price_2;
+                Super_total -=price_2;
+                alert("Het hang roi");
+            }
+            document.getElementById("clicks_2").innerHTML = clicks_2;
+            document.getElementById("total_2").innerHTML = total_2;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+        function offClick_2() {
+            clicks_2 -= 1;
+            total_2 -= price_2;
+            Super_total -=price_2;
+            if ( clicks_2 < 0 ){
+                clicks_2 = 0;
+                total_2 = 0;
+                Super_total +=price_2;
+            }
+            document.getElementById("total_2").innerHTML = total_2;
+            document.getElementById("clicks_2").innerHTML = clicks_2;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+        
+        /*Them hoac bot gia tri san pham*/
+        var clicks_3 = 0;
+        var max_clicks_3 = 11;
+        var total_3 = 0;
+        var price_3 = 192;
+        function onClick_3() {
+            clicks_3 += 1;
+            total_3 += price_3;
+            Super_total +=price_3;
+            if ( clicks_3 == max_clicks_3){
+                clicks_3 -=1;
+                total_3 -=price_3;
+                Super_total -=price_3;
+                alert("Het hang roi");
+            }
+            document.getElementById("clicks_3").innerHTML = clicks_3;
+            document.getElementById("total_3").innerHTML = total_3;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+        function offClick_3() {
+            clicks_3 -= 1;
+            total_3 -= price_3;
+            Super_total -=price_3;
+            if ( clicks_3 < 0 ){
+                clicks_3 = 0;
+                total_3 = 0;
+                Super_total +=price_3;
+            }
+            document.getElementById("total_3").innerHTML = total_3;
+            document.getElementById("clicks_3").innerHTML = clicks_3;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+    
+        /*Them hoac bot gia tri san pham*/
+        var clicks_4 = 0;
+        var max_clicks_4 = 11;
+        var total_4 = 0;
+        var price_4 = 62;
+        function onClick_4() {
+            clicks_4 += 1;
+            total_4 += price_4;
+            Super_total +=price_4;
+            if ( clicks_4 == max_clicks_4){
+                clicks_4 -=1;
+                total_4 -=price_4;
+                Super_total -=price_4;
+                alert("Het hang roi");
+            }
+            document.getElementById("clicks_4").innerHTML = clicks_4;
+            document.getElementById("total_4").innerHTML = total_4;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+        function offClick_4() {
+            clicks_4 -= 1;
+            total_4 -= price_4;
+            Super_total -=price_4;
+            if ( clicks_4 < 0 ){
+                clicks_4 = 0;
+                total_4 = 0;
+                Super_total +=price_4;
+            }
+            document.getElementById("total_4").innerHTML = total_4;
+            document.getElementById("clicks_4").innerHTML = clicks_4;
+            document.getElementById("Super_total").innerHTML = Super_total;
+        };
+        $(document).ready(function(){
+          $("#but1").click(function(){
+            $("#div1").remove();    
+            Super_total=Super_total-total_1;
+            document.getElementById("Super_total").innerHTML = Super_total;
+          });
+        });
+        $(document).ready(function(){
+          $("#but2").click(function(){
+            $("#div2").remove();
+            Super_total=Super_total-total_2;
+            document.getElementById("Super_total").innerHTML = Super_total;
+          });
+        });
+        $(document).ready(function(){
+          $("#but3").click(function(){
+            $("#div3").remove();
+            Super_total=Super_total-total_3;
+            document.getElementById("Super_total").innerHTML = Super_total;
+          });
+        });
+        $(document).ready(function(){
+          $("#but4").click(function(){
+            $("#div4").remove();
+            Super_total=Super_total-total_4;
+            document.getElementById("Super_total").innerHTML = Super_total;
+          });
+        });
+    </script>
+</body>
+
+</html>
